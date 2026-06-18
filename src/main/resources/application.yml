@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: log-backend
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/log_backend?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: 929260
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# Phase 2: 后续启用 MyBatis 时取消注释
+# mybatis:
+#   mapper-locations: classpath:mapper/*.xml
