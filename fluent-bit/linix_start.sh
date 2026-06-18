@@ -90,3 +90,4 @@ if [[ "${EUID}" -eq 0 ]]; then
 else
   exec sudo "${FLUENT_BIT_BIN}" -c "${CONFIG_FILE}"
 fi
+#
