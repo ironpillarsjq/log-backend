@@ -1,5 +1,6 @@
 package com.inspection.logbackend.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -10,9 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1/logs")
+@Slf4j
 public class LogController {
 
-    private static final Logger log = LoggerFactory.getLogger(LogController.class);
 
     @PostMapping
     public ResponseEntity<Void> receiveLogs(@RequestBody String body) {
