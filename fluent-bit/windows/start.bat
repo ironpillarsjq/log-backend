@@ -10,7 +10,7 @@ set "CONFIG_DIR=%~dp0"
 set "CONFIG_FILE=%CONFIG_DIR%fluent-bit.conf"
 
 rem Hard-coded Fluent Bit installation root for this machine.
-set "FB_INSTALL_HOME=D:\Major\fluent-bit"
+set "FB_INSTALL_HOME=C:\Users\ironp\Desktop\fluent-bit"
 echo [INFO] Using FB_INSTALL_HOME: %FB_INSTALL_HOME%
 set "FB_BIN=%FB_INSTALL_HOME%\bin\fluent-bit.exe"
 
